@@ -83,7 +83,7 @@ projectDisplayEl.empty();
 // Removes a project from local storage and prints the project data
 function handleDeleteProject() {
     var projectIndex = parseInt($(this).attr('date-index'));
-    var project = readProjectsFromStorage();
+    var projects = readProjectsFromStorage();
   // remove project from the array
   projects.splice(projectIndex, 1);
   saveProjectsToStorage(projects);
